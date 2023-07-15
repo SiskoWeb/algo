@@ -1,0 +1,30 @@
+First Task - Algorithm for Counting Words and Vowels in a Sentence:
+
+    Initialize three counters: wordCount = 0, vowelCount = 0, and charCount = 0.
+    Read the input sentence.
+    Iterate through each character in the sentence (excluding the last character, which is the point).
+        Increment the charCount by 1.
+        If the current character is a space (' '), increment wordCount by 1.
+        If the current character is a vowel (considering both uppercase and lowercase vowels), increment vowelCount by 1.
+    After the loop ends, increment wordCount by 1 to account for the last word in the sentence.
+    Print or return the values of wordCount and vowelCount.
+
+Pseudocode:
+
+Algorithm CountWordsAndVowels(sentence):
+    wordCount = 0
+    vowelCount = 0
+    charCount = 0
+
+    for i = 0 to length(sentence) - 2 do:
+        charCount = charCount + 1
+        
+        if sentence[i] == ' ' then:
+            wordCount = wordCount + 1
+        
+        if sentence[i] is a vowel (considering both uppercase and lowercase vowels) then:
+            vowelCount = vowelCount + 1
+    
+    wordCount = wordCount + 1
+    print "Number of words:", wordCount
+    print "Number of vowels:", vowelCount
