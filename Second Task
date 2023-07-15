@@ -1,0 +1,27 @@
+Algorithm for Summing Distinct Elements from Two Sets:
+
+    Initialize an empty array called distinctElements.
+    Initialize a variable sum = 0.
+    Iterate through each element in set1.
+        If the current element is not present in distinctElements, add it to the array and add the element to the sum.
+    Iterate through each element in set2.
+        If the current element is not present in distinctElements, add it to the array and add the element to the sum.
+    Print or return the value of sum.
+
+Pseudocode:
+
+Algorithm SumDistinctElements(set1, set2):
+    distinctElements = []
+    sum = 0
+    
+    for element in set1:
+        if element not in distinctElements:
+            distinctElements.append(element)
+            sum = sum + element
+    
+    for element in set2:
+        if element not in distinctElements:
+            distinctElements.append(element)
+            sum = sum + element
+    
+    print "Sum of distinct elements:", sum
